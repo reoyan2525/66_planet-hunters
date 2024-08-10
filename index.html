@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- [headタグ] -->
+    <!-- TOPページの場合 -->
+
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+        <!-- Facebook対象外の場合 -->
+
+        <head prefix="og: http://ogp.me/ns#">
+            <meta property="og:locale" content="ja_JP"><!-- 他には「en_US」など -->
+            <meta property="og:type" content="website"><!-- TOPページは「website」TOPページ以外は「article」 -->
+            <meta property="og:title" content="{PlanetHunters}"><!-- titleタグと一致する内容を入力 -->
+            <meta property="og:url" content="{#}"><!-- httpまたはhttpsから始まる該当ページの絶対パス -->
+            <meta property="og:image" content="{#}"><!-- httpまたはhttpsから始まるog画像への絶対パス -->
+            <meta property="og:site_name" content="{PlanetHunters}"><!-- TOPページのtitleタグと一致する内容を入力 -->
+            <meta property="og:description" content="{VRゲーム「PlanetHunters」公式ウェブサイトです。}">
+            <!-- meta descriptionと一致する内容を入力 -->
+            <meta property="fb:app_id" content="{#}"><!-- Facebookの設定 -->
+            <meta name="twitter:card" content="summary"><!-- 他には「summary_large_image」 -->
+            <meta name="twitter:title" content="{PlanetHunters}"><!-- titleタグと一致する内容を入力 -->
+
+            <title>PlanetHunters</title>
+            <meta name="description" content="VRゲーム「PlanetHunters」公式ウェブサイトです。">
+            <meta name="keywords" content="VRゲーム">
+            <meta name="viewport" content="width=device-width">
+            <link rel="icon" href="img/favicon.ico">
+            <link rel="stylesheet" href="css/reset.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link
+                href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+                rel="stylesheet">
+            <!-- <link rel="stylesheet" href="css/lightbox.min.css"> -->
+            <link rel="stylesheet" href="css/style.css">
+            <!-- Google Fonts for Icons -->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        </head>
+
+    <body id="top">
+
+        <div id="js-loading" class="loading">
+            <div class="loading-aninmation">
+                <div class="fingerprint-spinner">
+                    <div class="spinner-ring"></div>
+                    <div class="spinner-ring"></div>
+                    <div class="spinner-ring"></div>
+                    <div class="spinner-ring"></div>
+                    <div class="spinner-ring"></div>
+                    <div class="spinner-ring"></div>
+                    <div class="spinner-ring"></div>
+                    <div class="spinner-ring"></div>
+                    <div class="spinner-ring"></div>
+                </div>
+                <div class="loading-txt">
+                    <p><span>loading...</span></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v20.0" nonce="YnXlzFME"></script>
+
+        <div class="bgParallax">
+            <video class="bgParallax-video" playsinline muted autoplay loop>
+                <source src="./video/bg_movie.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <header class="header">
+            <div class="header-inner">
+                <div class="site-logo">
+                    <a href="./index.html" class="site-logo-link">
+                        <img src="./img/Necopon games.svg" alt="" class="site-logo-img">
+                    </a>
+                </div>
+                <nav class="gnav-menu">
+                    <ul class="gnav-menu-list">
+                        <li class="gnav-menu-item">
+                            <a href="#story" class="gnav-menu-item-link">STORY</a>
+                        </li>
+                        <li class="gnav-menu-item">
+                            <a href="#trailer" class="gnav-menu-item-link">TRAILER</a>
+                        </li>
+                        <li class="gnav-menu-item play-btn">
+                            <a href="#" class="play-btn-link">PLAY NOW</a>
+                        </li>
+                    </ul>
+                    <div class="gnav-audio">
+                        <div class="audio-switch">
+                            <button id="js-audio-play">
+                                <span class="audio-switch-txt">SOUND OFF</span>
+                                <span class="audio-switch-icon material-icons">volume_off</span>
+                            </button>
+                            <audio class="js-audio" loop>
+                                <source src="/audio/cinematic-melody-main-9785.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="mv">
+            <div class="mv-inner">
+                <div class="mv-titleArea">
+                    <div class="mv-label">VR GAME</div>
+                    <div class="mv-title">Planet<br>Hunters</div>
+                    <div class="mv-subTitle">惑星を奪還せよ</div>
+                    <button class="mv-btn play-btn">
+                        <a href="" class="play-btn-link">PLAY NOW</a>
+                    </button>
+                </div>
+                <div class="newsBox">
+                    <p>
+                        <span class="newsBox-date">2030.02.20</span>
+                        <span class="newsBox-body">バージョン5.6リリース：アバター・アイテム大量追加</span>
+                    </p>
+                </div>
+                <div class="scrollDown">
+                    <span>Scroll</span>
+                </div>
+            </div>
+        </section>
+
+        <main class="main-wrapper">
+
+            <section class="story" id="story">
+                <div class="section-wrapper">
+                    <div class="story-body">
+                        <div class="story-columWrap">
+                            <div class="story-colum">
+                                <div class="story-colum-Txt">
+                                    <h2 class="story-colum-title">STORY</h2>
+                                    <h3 class="story-colum-subTitle">
+                                        奪われた故郷の星を取り戻せ<br>
+                                        壮大なSFファンタジー
+                                    </h3>
+                                    <div class="story-colum-txt">
+                                        <p>銀河歴222年、惑星ネコチャンは、ボスネコ将軍の率いる軍の反乱により完全に制圧された。将軍の側近マンチカンは軍政府に従わない人間を辺境の星ニャゴーへ強制的に追放。食料や資源の乏しいニャゴーでは多くの難民が発生し飢餓に苦しんでいた。ニャゴーのスラム街で育った孤児の姉弟がいた。姉のミケと弟のタマは母親をボスネコ将軍に殺された事実を知る。母の復讐のため、そして故郷の惑星ネコチャンを奪還すべく、ミケとタマはいま行動に出る！
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="story-img-content">
+                                    <img src="./img/story-img-01.jpg" alt="STORYイメージ画像01" class="story-img">
+                                </div>
+                            </div>
+
+                            <div class="story-colum">
+                                <div class="story-colum-Txt">
+                                    <h3 class="story-colum-subTitle">
+                                        隠された陰謀を暴け<br>
+                                        衝撃的な事実に驚愕
+                                    </h3>
+                                    <div class="story-colum-txt">
+                                        <p>ミケとタマはネコジャラシ作戦により軍政府の最新鋭の小型船チュールを奪うことに成功。チュールのハイテンションワープ星間航行により惑星ネコチャンへあとわずか３時間で到着という時、小惑星帯アビシニアンで謎の救難信号を受信する。意外にも信号の発信源はボスネコ将軍だった。彼は今にも絶えそうなかすれた声で「私はおまえたちミケとタマの父親なのだ」と語る。その瞬間、ミケとタマの育ての親同然で仲間のはずのホワイトオッドアイがタマの背中を刀で切り裂いたのだった......
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="story-img-content">
+                                    <img src="./img/story-img-02.jpg" alt="STORYイメージ画像02" class="story-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta_01">
+                <div class="section-wrapper">
+                    <div class="cta-body">
+                        <div class="cta-title">
+                            <p><span>ARE YOU READY TO FIGHT?</span></p>
+                        </div>
+                        <button class="play-btn cta-btn">
+                            <a href="#" class="play-btn-link">PLAY NOW</a>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="trailer" id="trailer">
+                <div class="section-wrapper">
+                    <div class="trailer-body">
+                        <h2 class="trailer-title">TRAILER</h2>
+                        <div class="trailer-video-content">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/knRAM6AHcKI?si=CyMIzKmfbI6eUYw_"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta_02">
+                <div class="section-wrapper">
+                    <div class="cta-body">
+                        <div class="cta-title">
+                            <p><span>ARE YOU READY TO FIGHT?</span></p>
+                        </div>
+                        <button class="play-btn cta-btn">
+                            <a href="#" class="play-btn-link">PLAY NOW</a>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="snsShare">
+                    <ul class="snsShare-list">
+                        <li class="snsShare-item">
+                            <div class="fb-like" data-href="#" data-width="" data-layout="button_count" data-action=""
+                                data-size="" data-share="true"></div>
+                        </li>
+                        <li class="snsShare-item">
+                            <div class="line-it-button" data-lang="ja" data-type="share-b" data-env="REAL"
+                                data-url="http://#" data-color="default" data-size="small" data-count="false"
+                                data-ver="3" style="display: none;"></div>
+                            <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js"
+                                async="async" defer="defer"></script>
+                        </li>
+                        <li class="snsShare-item">
+                            <a href="https://twitter.com/x?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                                data-show-count="false">Follow @x</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p><span>(c)Necopon games</span></p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="footer-btnArea">
+            <button class="play-btn footer-btnArea-btn">
+                <a href="#" class="play-btn-link">PLAY NOW</a>
+            </button>
+        </div>
+
+        <script src="/js/main.js"></script>
+    </body>
+
+</html>
