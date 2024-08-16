@@ -1,45 +1,37 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
+<head prefix="og: http://ogp.me/ns#">
     <meta charset="UTF-8">
+    <meta property="og:locale" content="ja_JP"><!-- 他には「en_US」など -->
+    <meta property="og:type" content="website"><!-- TOPページは「website」TOPページ以外は「article」 -->
+    <meta property="og:title" content="{PlanetHunters}"><!-- titleタグと一致する内容を入力 -->
+    <meta property="og:url" content="{#}"><!-- httpまたはhttpsから始まる該当ページの絶対パス -->
+    <meta property="og:image" content="{#}"><!-- httpまたはhttpsから始まるog画像への絶対パス -->
+    <meta property="og:site_name" content="{PlanetHunters}"><!-- TOPページのtitleタグと一致する内容を入力 -->
+    <meta property="og:description" content="{VRゲーム「PlanetHunters」公式ウェブサイトです。}">
+    <!-- meta descriptionと一致する内容を入力 -->
+    <meta property="fb:app_id" content="{#}"><!-- Facebookの設定 -->
+    <meta name="twitter:card" content="summary"><!-- 他には「summary_large_image」 -->
+    <meta name="twitter:title" content="{PlanetHunters}"><!-- titleタグと一致する内容を入力 -->
 
-    <!-- [headタグ] -->
-    <!-- TOPページの場合 -->
-
-    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
-        <!-- Facebook対象外の場合 -->
-
-        <head prefix="og: http://ogp.me/ns#">
-            <meta property="og:locale" content="ja_JP"><!-- 他には「en_US」など -->
-            <meta property="og:type" content="website"><!-- TOPページは「website」TOPページ以外は「article」 -->
-            <meta property="og:title" content="{PlanetHunters}"><!-- titleタグと一致する内容を入力 -->
-            <meta property="og:url" content="{#}"><!-- httpまたはhttpsから始まる該当ページの絶対パス -->
-            <meta property="og:image" content="{#}"><!-- httpまたはhttpsから始まるog画像への絶対パス -->
-            <meta property="og:site_name" content="{PlanetHunters}"><!-- TOPページのtitleタグと一致する内容を入力 -->
-            <meta property="og:description" content="{VRゲーム「PlanetHunters」公式ウェブサイトです。}">
-            <!-- meta descriptionと一致する内容を入力 -->
-            <meta property="fb:app_id" content="{#}"><!-- Facebookの設定 -->
-            <meta name="twitter:card" content="summary"><!-- 他には「summary_large_image」 -->
-            <meta name="twitter:title" content="{PlanetHunters}"><!-- titleタグと一致する内容を入力 -->
-
-            <title>PlanetHunters</title>
-            <meta name="description" content="VRゲーム「PlanetHunters」公式ウェブサイトです。">
-            <meta name="keywords" content="VRゲーム">
-            <meta name="viewport" content="width=device-width">
-            <link rel="icon" href="img/favicon.ico">
-            <link rel="stylesheet" href="css/reset.css">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link
-                href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
-                rel="stylesheet">
-            <!-- <link rel="stylesheet" href="css/lightbox.min.css"> -->
-            <link rel="stylesheet" href="css/style.css">
-            <!-- Google Fonts for Icons -->
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        </head>
+    <title>PlanetHunters</title>
+    <meta name="description" content="VRゲーム「PlanetHunters」公式ウェブサイトです。">
+    <meta name="keywords" content="VRゲーム">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/lightbox.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts for Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
 
     <body id="top">
 
